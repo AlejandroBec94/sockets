@@ -1,0 +1,17 @@
+{
+  "name": "sockets",
+  "version": "1.0.0",
+  "description": "proyecto de chat nodejs y socket.io, posteriormente se agregara a proyecto laravel",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bec",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5",
+    "socket.io": "^2.1.1"
+  }
+}
