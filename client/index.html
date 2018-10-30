@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Socket.io</title>
+    <style>
+        #messages{
+            width: 95%;
+            max-width: 400px;
+            height: 350px;
+            overflow-y: scroll;
+            border: 1px solid #eee;
+            box-shadow:  0 0 20px #ccc inset;
+        }
+        .message{
+            fl
+            margin: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background: white;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+    <div id="messages">
+
+
+
+    </div>
+
+    <form onsubmit="return addMessage(this);">
+        <input id="nickname"  placeholder="Nombre o Nick">
+        <input id="text" placeholder="Mensaje...">
+        <input type="submit" value="Enviar">
+    </form>
+
+
 </body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/main.js"></script>
 </html>
